@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Kanit);
+        /* CREATE TREK MODAL WINDOW CSS */
+
+.password {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 120px;
+  border: 2px solid #1E1E1E;
+  background: linear-gradient(-45deg, #EAF4D6, #E1F6CB, #DDF8C1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  height: 43vh;
+  width: 18vw;
+  z-index: 9;
+}
+
+.passinfo {
+  margin-top: 8vh;
+}
+
+.passitem {
+  padding: 0px;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 3vh;
+}
+
+
+
+
+.change {
+  padding: 6px 12px;
+  align-items: center;
+  font-size: 16px;
+  margin-top: 4.5vh;
+  margin-left: 6vw;
+  font-weight: bolder;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  background-color: #97bc62;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  font-family:'kanit'; 
+  text-shadow:
+        -0.2px -0.2px 0 #00FF05,  
+         0.2px -0.2px 0 #00FF05,
+        -0.2px  0.2px 0 #00FF05,
+         0.2px  0.2px 0 #00FF05;
+ }
+ /* effect*/
+ .change:active {
+ transform: translateY(2px);
+ box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+ 
+ }
+
+
+
+    </style>
+</head>
+<body>
+  <!-- CHANGE PASSWORD MODAL  -->
+  <div class="password" id="modal">
+  <form>
+      <div class="passinfo">
+        <div class="passitem"><input type="text" placeholder="Old-password" ></div>
+        <div class="passitem"><input type="text" placeholder="New-password"></div>
+        <div class="passitem"><input type="text" placeholder="re-enter password"></div>
+        <button class="change">CHANGE</button> 
+    </div>
+  </form>
+    <div id="close-modal">x</div>
+    </div>
+<!--CHANGE PASSWORD MODAL WINDOW END -->
+  <script src="pass.js"></script>
+</body>
+</html>

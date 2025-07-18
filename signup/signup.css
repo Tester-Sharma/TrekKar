@@ -1,0 +1,155 @@
+  @import url(https://fonts.googleapis.com/css?family=Kanit);
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+  }
+  body{
+    overflow-y: hidden;
+  }
+  .screen {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(http://localhost/trek-kar/images/Login_Signup_BG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+    padding: 60px 0px;
+    padding-top: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(255, 255, 255, 0.3)
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 5px;
+  }
+  .logo img {
+    width: 60%;
+  }
+
+  .image{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  
+  input[type="file"] {
+    display: none;
+  }
+  label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  .profile {    
+    cursor: pointer;
+  }
+    
+  
+  .field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px 0px;
+    position: relative;
+  }
+  .field .svg {
+    position: absolute;
+    width: 25px;
+    left: 5px;
+  }
+  .field input {
+    padding: 10px 60px;
+    width: 100%;
+    border: none;
+    outline: none;
+    /* -webkit-text-fill-color: whitesmoke; */
+    font-size: 15px;
+    text-align: center;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(129, 129, 129, 0.5);
+  }
+
+  .field input::placeholder {
+    text-align: center;
+    color: rgb(237, 232, 232);
+  }
+
+  a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  a:hover {
+       color: #97BC62;
+  }
+  
+  .selector {
+    padding: 10px 60px;
+    width: 100%;
+    border: none;
+    outline: none;
+    /* -webkit-text-fill-color: whitesmoke; */
+    font-size: 15px;
+    text-align: center; /* Center the text within the dropdown */
+    background-color: transparent;
+    border-bottom: 1px solid rgba(129, 129, 129, 0.5);
+  }
+  
+  /* Add text-align: center to the dropdown options */
+  .selector option {
+    text-align: center;
+  }
+  
+
+  
+  .Signup {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    padding-top: 30px;
+  }
+
+  .Signup input {
+    font-family:'kanit', Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    height: 42px;
+    width: 50%;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: #97BC62;
+    color: white;
+  }
+
+  .Signup input:active{
+    transform: scale(.9);
+  }
+  .login {
+    font-family: kanit;
+    padding: 0px 0px;
+    color: #FFFFFF;
+  }
